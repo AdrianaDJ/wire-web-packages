@@ -72,7 +72,7 @@ export class AVSHandler extends MessageHandler {
   private wCall?: Wcall;
   private wUser?: number;
   private activeCalls: Record<string, Call> = {};
-  private readonly mediaStream: MediaStream = new MediaStream();
+  private readonly mediaStream: MediaStream = new wrtc.MediaStream();
 
   async handleEvent(payload: PayloadBundle): Promise<void> {}
 
